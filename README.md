@@ -1,2 +1,2 @@
-# farm_owl_montana_state
-Drivers and code for an autonomous agriculture drone
+# The Farm Owl
+An autonomous, lightweight, and cheap agricultural drone. <br/> 
