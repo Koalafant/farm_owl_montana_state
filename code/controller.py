@@ -1,3 +1,6 @@
+import image_stitch
+import pi
+
 class Controller:
     def __init__(self, front_set, back_set, left_set, right_set):
         self.front_set = front_set

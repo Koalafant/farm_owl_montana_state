@@ -6,3 +6,4 @@ class Pixel:
 
     def __str__(self) -> str:
         return f"R:<{self.red}>, G:<{self.green}>, B:<{self.blue}>"
+
