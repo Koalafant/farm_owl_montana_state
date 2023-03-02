@@ -1,5 +1,6 @@
-import image_stitch
-import pi
+import pi_drivers
+import image_abstraction
+# import stitcher
 
 class Controller:
     def __init__(self, front_set, back_set, left_set, right_set):
