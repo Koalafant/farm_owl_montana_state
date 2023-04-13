@@ -1,13 +1,13 @@
-from motor_driver import Motor_Driver
+from code.pi.motor_driver import Motor_Driver as MD
 
 
 class Drone_Driver:
     def __init__(self):
-        self.front = (Motor_Driver.motor1, Motor_Driver.motor2)
-        self.back = (Motor_Driver.motor3, Motor_Driver.motor4)
-        self.left = (Motor_Driver.motor1, Motor_Driver.motor3)
-        self.right = (Motor_Driver.motor2, Motor_Driver.motor4)
-        self.all = (Motor_Driver.motor1, Motor_Driver.motor2, Motor_Driver.motor3, Motor_Driver.motor4)
+        self.front = (MD.motor1, MD.motor2)
+        self.back = (MD.motor3, MD.motor4)
+        self.left = (MD.motor1, MD.motor3)
+        self.right = (MD.motor2, MD.motor4)
+        self.all = (MD.motor1, MD.motor2, MD.motor3, MD.motor4)
 
     def thrust(self, speed: int):
         pass
