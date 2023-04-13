@@ -1,3 +1,6 @@
+from drone_driver import Drone_Driver
+
+
 class Controller:
     def __init__(self, front_set, back_set, left_set, right_set):
         self.front_set = front_set
@@ -22,3 +25,12 @@ class Controller:
 
     def down(self, distance):
         pass
+
+
+def main():
+    drone_driver = Drone_Driver()
+    pass
+
+
+if __name__ == "__main__":
+    main()
