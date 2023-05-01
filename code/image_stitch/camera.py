@@ -1,10 +1,8 @@
 import cv2 as cv
 import numpy as np
 
+
 class Camera:
-    """https://docs.opencv.org/4.x/df/d15/classcv_1_1detail_1_1Estimator.html"""
-    """https://docs.opencv.org/4.x/d5/d56/classcv_1_1detail_1_1BundleAdjusterBase.html"""
-    """https://docs.opencv.org/4.x/d7/d74/group__stitching__rotation.html#ga8faf9588aebd5aeb6f8c649c82beb1fb"""
 
     def __init__(self, features, matches, **kwargs):
         self.estimator = cv.detail_HomographyBasedEstimator(**kwargs)

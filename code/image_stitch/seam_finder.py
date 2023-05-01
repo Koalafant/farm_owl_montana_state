@@ -3,8 +3,8 @@ import numpy as np
 from helper import add_weighted_image, remove_invalid_line_pixels, colored_img_generator
 from blender import Blender
 
-class SeamFinder:
-    """https://docs.opencv.org/4.x/d7/d09/classcv_1_1detail_1_1SeamFinder.html"""
+
+class Seam_Finder:
 
     def __init__(self):
         self.finder = cv.detail_DpSeamFinder("COLOR")
@@ -34,7 +34,7 @@ class SeamFinder:
 
     @staticmethod
     def draw_seam_lines(panorama, blended_seam_masks, linesize=1, color=(0, 0, 255)):
-        seam_lines = SeamFinder.extract_seam_lines(blended_seam_masks, linesize)
+        seam_lines = Seam_Finder.extract_seam_lines(blended_seam_masks, linesize)
         panorama_with_seam_lines = panorama.copy()
         panorama_with_seam_lines[seam_lines == 255] = color
         return panorama_with_seam_lines

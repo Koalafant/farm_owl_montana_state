@@ -1,9 +1,8 @@
-from megapix_scaler import MegapixScaler
 from megapix_scaler import MegapixDownscaler
 import cv2 as cv
 
 
-class ImageHandler:
+class Image_Handler:
 
     def __init__(self, imgs):
         self.img_names = imgs

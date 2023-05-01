@@ -3,7 +3,8 @@ import cv2 as cv
 from blender import Blender
 import largestinteriorrectangle
 
-# code from : TODO ADD CREDS HERE
+
+# code from : LukasAlexanderWeber
 
 class Rectangle(namedtuple("Rectangle", "x y width height")):
     __slots__ = ()
@@ -140,4 +141,3 @@ class Cropper:
     @staticmethod
     def crop_rectangle(img, rectangle):
         return img[rectangle.y: rectangle.y2, rectangle.x: rectangle.x2]
-

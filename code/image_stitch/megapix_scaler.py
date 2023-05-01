@@ -1,6 +1,7 @@
 import numpy as np
 
-# code from : TODO ADD CREDS HERE
+
+# code from : LukasAlexanderWeber
 
 class MegapixScaler:
     def __init__(self, megapix):

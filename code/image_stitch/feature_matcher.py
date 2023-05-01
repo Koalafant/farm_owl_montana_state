@@ -4,8 +4,7 @@ import cv2 as cv
 import numpy as np
 
 
-class FeatureMatcher:
-    """https://docs.opencv.org/4.x/da/d87/classcv_1_1detail_1_1FeaturesMatcher.html"""
+class Feature_Matcher:
 
     def __init__(self, features):
         self.matcher = cv.detail_BestOf2NearestMatcher()

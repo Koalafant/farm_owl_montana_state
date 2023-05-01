@@ -2,11 +2,7 @@ import cv2 as cv
 import numpy as np
 
 
-# using given images, seam masks, and rectangle corners in said images,
-# produces a panorama-effect image 'stitched' together via feature similarity measured by confidence.
-
 class Blender:
-    """https://docs.opencv.org/4.x/d6/d4a/classcv_1_1detail_1_1Blender.html"""
 
     def __init__(self, imgs, masks, corners, sizes):
         # init blender
