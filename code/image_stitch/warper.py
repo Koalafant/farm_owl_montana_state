@@ -2,8 +2,8 @@ from statistics import median
 import cv2 as cv
 import numpy as np
 
+
 class Warper:
-    """https://docs.opencv.org/4.x/da/db8/classcv_1_1detail_1_1RotationWarper.html"""
 
     def __init__(self, cameras):
         self.warper_type = 'spherical'
@@ -41,7 +41,7 @@ class Warper:
         for size, camera in zip(sizes, cameras):
             warper = cv.PyRotationWarper(self.warper_type, self.scale * aspect)
             K = Warper.get_K(camera, aspect)
-            roi =  warper.warpRoi(size, K, camera.R)
+            roi = warper.warpRoi(size, K, camera.R)
             roi_corners.append(roi[0:2])
             roi_sizes.append(roi[2:4])
         return roi_corners, roi_sizes
